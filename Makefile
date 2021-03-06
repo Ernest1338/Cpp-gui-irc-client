@@ -6,3 +6,6 @@ main.o: src/main.cpp
 
 clean:
 	rm build/*.o build/app 
+
+$(shell mkdir -p build/)
+
