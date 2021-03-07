@@ -6,14 +6,14 @@
 |-.gitignore (/build)
 |-Makefile
 |-src
--|-main.cpp
- |-irc.cpp
- |-irc.h
- |-gui.cpp
- |-gui.h
+--|-main.cpp
+  |-irc.cpp
+  |-irc.h
+  |-gui.cpp
+  |-gui.h
 |-build
--|-*.o
- |-app
+--|-app
+  |-*.o
 ```
 
 # build system
@@ -24,7 +24,13 @@
 - Boost C++ libraries
 - qt
 - g++
+- GNU make
 
 # TODOs
 - network communication over specified port (something like netcat connection)
+- ...
+
+# Milestones
+- [ ] Communicating with IRC servers throuh CLI
+- [ ] Basic GUI working propertly
 - ...
