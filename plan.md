@@ -6,14 +6,14 @@
 |-.gitignore (/build)
 |-Makefile
 |-src
--|-main.cpp
- |-irc.cpp
- |-irc.h
- |-gui.cpp
- |-gui.h
+--|-main.cpp
+  |-irc.cpp
+  |-irc.h
+  |-gui.cpp
+  |-gui.h
 |-build
--|-*.o
- |-app
+--|-app
+  |-*.o
 ```
 
 # build system
