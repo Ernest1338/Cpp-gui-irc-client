@@ -14,6 +14,7 @@ sudo make install
 - QT
 - g++
 - Boost C++ libraries
+- GNU make
 
 # Compilation alone
 ```

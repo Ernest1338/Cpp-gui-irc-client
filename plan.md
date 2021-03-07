@@ -24,6 +24,7 @@
 - Boost C++ libraries
 - qt
 - g++
+- GNU make
 
 # TODOs
 - network communication over specified port (something like netcat connection)
