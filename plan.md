@@ -29,3 +29,8 @@
 # TODOs
 - network communication over specified port (something like netcat connection)
 - ...
+
+# Milestones
+- [ ] Communicating with IRC servers throuh CLI
+- [ ] Basic GUI working propertly
+- ...
