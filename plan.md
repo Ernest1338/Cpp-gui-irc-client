@@ -28,6 +28,7 @@
 
 # TODOs
 - network communication over specified port (something like netcat connection)
+- configure sudo make install
 - ...
 
 # Milestones
