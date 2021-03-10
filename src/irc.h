@@ -24,7 +24,8 @@ class chat_message {
         void encode_header();                                 // done
 
     private:
-        char data_[header_length + max_body_length];
+        //char data_[header_length + max_body_length];
+        char data_[max_body_length];
         std::size_t body_length_;
 };
 

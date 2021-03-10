@@ -23,15 +23,18 @@ char* chat_message::data() {
 }
 
 std::size_t chat_message::length() const {
-    return header_length + body_length_;
+    //return header_length + body_length_;
+    return body_length_;
 }
 
 const char* chat_message::body() const {
-    return data_ + header_length;
+    //return data_ + header_length;
+    return data_;
 }
 
 char* chat_message::body() {
-    return data_ + header_length;
+    //return data_ + header_length;
+    return data_;
 }
 
 std::size_t chat_message::body_length() const {
