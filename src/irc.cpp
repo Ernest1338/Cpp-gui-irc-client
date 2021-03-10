@@ -56,6 +56,7 @@ bool chat_message::decode_header() {
     return true;
 }
 
+// Unused function providing a way to create a message header (in current state it adds message length at the beggining)
 void chat_message::encode_header() {
     char header[header_length + 1] = "";
     std::sprintf(header, "%4d", static_cast<int>(body_length_));

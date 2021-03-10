@@ -20,10 +20,11 @@ int main(int argc, char* argv[]) {
         char line[chat_message::max_body_length + 1];
 
         while (std::cin.getline(line, chat_message::max_body_length + 1)) {
+            std::strcat(line, "\n");
             chat_message msg;
             msg.body_length(std::strlen(line));
             std::memcpy(msg.body(), line, msg.body_length());
-            msg.encode_header();
+            //msg.encode_header();     // that's how you use encode_header function to create a message header
             c.write(msg);
         }
 
