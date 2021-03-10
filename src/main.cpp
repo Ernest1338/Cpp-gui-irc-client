@@ -21,6 +21,7 @@ int main(int argc, char* argv[]) {
 
         usleep(10000); // needed in order to give chat_client time to connect
 
+        // Creating test message and sending it to server
         char line1[chat_message::max_body_length + 1] = "test\n";
         chat_message msg_line1;
         msg_line1.body_length(std::strlen(line1));
