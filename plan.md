@@ -29,6 +29,7 @@
 # TODOs
 - network communication over specified port (something like netcat connection)
 - configure sudo make install
+- remove header decoding in incoming traffic
 - ...
 
 # Milestones
