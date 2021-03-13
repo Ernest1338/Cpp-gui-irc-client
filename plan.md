@@ -29,7 +29,7 @@
 # TODOs
 - network communication over specified port (something like netcat connection)
 - configure sudo make install
-- remove header decoding in incoming traffic
+- remove header decoding in incoming traffic (each incomming message is parsed based on the header (length). need to change that to: newline (\n) as a message delimiter)
 - ...
 
 # Milestones
