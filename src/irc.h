@@ -12,16 +12,16 @@ class chat_message {
         enum { header_length = 4 };
         enum { max_body_length = 512 };
 
-        chat_message();                                       // done
-        const char* data() const;                             // done
-        char* data();                                         // done
-        std::size_t length() const;                           // done
-        const char* body() const;                             // done
-        char* body();                                         // done
-        std::size_t body_length() const;                      // done
-        void body_length(std::size_t new_length);             // done
-        bool decode_header();                                 // done
-        void encode_header();                                 // done
+        chat_message();
+        const char* data() const;
+        char* data();
+        std::size_t length() const;
+        const char* body() const;
+        char* body();
+        std::size_t body_length() const;
+        void body_length(std::size_t new_length);
+        bool decode_header();
+        void encode_header();
 
     private:
         //char data_[header_length + max_body_length];
@@ -33,15 +33,15 @@ typedef std::deque<chat_message> chat_message_queue;
 
 class chat_client {
     public:
-        chat_client(boost::asio::io_context& io_context, const tcp::resolver::results_type& endpoints);                                        // done
-        void write(const chat_message& msg);                  // done
-        void close();                                         // done
+        chat_client(boost::asio::io_context& io_context, const tcp::resolver::results_type& endpoints);
+        void write(const chat_message& msg);
+        void close();
     
     private:
-        void do_connect(const tcp::resolver::results_type& endpoints);                                    // done
-        void do_read_header();                                // done
-        void do_read_body();                                  // done
-        void do_write();                                      // done
+        void do_connect(const tcp::resolver::results_type& endpoints);
+        void do_read_header();
+        void do_read_body();
+        void do_write();
         boost::asio::io_context& io_context_;
         tcp::socket socket_;
         chat_message read_msg_;
